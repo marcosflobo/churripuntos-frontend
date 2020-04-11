@@ -1,0 +1,77 @@
+h1, h2, footer{
+    text-align: center;
+}
+
+svg, span i {
+    cursor: pointer;
+}
+
+#div_img_churripuntos {
+    display: none;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/churripuntos.jpg');
+}
+
+#div_names_reached_limit {
+    text-align: center;
+    font-size: 5em;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #CCCCCC;
+}
+
+#div_toolbar {
+    padding: 1em;
+    margin: 1em;
+}
+
+#div_button_add_member {
+    cursor: pointer;
+    color: green;
+}
+
+#div_form_add_member {
+    display: none;
+}
+
+.member_row {
+    padding: 0.5em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.member-name span {
+    padding: 0.2em;
+}
+
+.member-name span.name {
+    padding-right: 1em;
+}
+
+span.add_churripunto {
+    color: Dodgerblue;
+}
+
+span.delete_churripunto {
+    color: Tomato;
+}
+
+span.delete_member {
+    color: red;
+}
+
+.churripunto {
+    background-color: Tomato;
+}
+
+.churripunto-1{
+    opacity: 0.1;
+}
+.churripunto-2{
+    opacity: 0.25;
+}
+.churripunto-3{
+    opacity: 0.5;
+}
+.churripunto-4{
+    opacity: 0.75;
+}

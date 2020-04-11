@@ -1,27 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/css.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
-    <script src="js/member.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/ddb2d6692d.js" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    <title>Churripuntos Dashboard</title>
 </head>
 <body>
-<h1>Churripuntos dashboard</h1>
 
-<div id="churripuntos-list">
+<div class="container">
+    <h1>Churripuntos Dashboard</h1>
+    <h2>YOUR TEAM NAME</h2>
 
-</div>
-<div>
-    <input id="name" type="text" />
-    <input id="points" type="number" value="0" />
-    <div id="btn_create_member">submit</div>
+    <div id="div_toolbar" class="row justify-content-start">
+        <div class="col-2" id="div_button_add_member" title="Click to add a new member">
+            <i class="fas fa-user-plus fa-5x"></i>
+        </div>
+        <div class="col-3" id="div_form_add_member">
+            <input id="name" type="text" placeholder="Paco" />
+            <input id="points" type="hidden" value="0" />
+            <button type="button" class="btn btn-secondary" id="btn_cancel_create_member">Cancel</button>
+            <button type="button" class="btn btn-primary" id="btn_create_member">Add member</button>
+        </div>
+    </div>
+    <div id="div_img_churripuntos">
+        <div id="div_names_reached_limit"></div>
+    </div>
+    <div id="churripuntos-list"></div>
+
+    <footer><a href="https://github.com/marcosflobo/churripuntos-frontend" target="_blank" title="Go to Churripuntos frontend project">Churripuntos dashboard</a> and
+        <a href="https://github.com/marcosflobo/churripuntos-api" target="_blank" title="Go to Churripuntos api project">Churripuntos API</a> </footer>
 </div>
 
 <!-- Optional JavaScript -->
