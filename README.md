@@ -23,3 +23,10 @@ There is a couple of parameters to configure based on your team and rules
   
 - index.html
   - h2: The \<h2\> tag should contain the name of your team
+  
+## Docker
+To run this frontend as a Docker container
+```bash
+docker run --rm --name some-nginx -p 8081:80 -v $PWD:/usr/share/nginx/html:ro nginx
+```
+Please note $PWD. This means that this repository should be cloned in the same directory where the docker command runs.
